@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/step1.css">
+    <link rel="stylesheet" href="styles/step2.css">
+    <link rel="stylesheet" href="styles/step3.css">
+    <link rel="stylesheet" href="styles/step4.css">
+    <title>Sandwich Maker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="/hamburger.png" type="image/x-icon">
+
+</head>
+<body>
+    <div class="up">
+        <p style="margin-right: 10px; color: #ffb600;">Sandwitch</p>
+        <p style="color: white;">Fassi</p>
+    </div>
+    <div id="app">
+        <!-- Step 1: Welcome -->
+        <div class="step" id="step1">
+            <h1>Welcome,</h1>
+            <p>You can make your Sandwitch here very<br> simple and easy</p>
+            <label for="nameInput">What's your name ?</label>
+            <input type="text" id="nameInput" placeholder="Enter your name">
+            <button class="button" onclick="nextStep()" type="submit">Next</button>
+        </div>
+
+        <!-- Step 2: Sandwich Ingredients -->
+        <div class="step" id="step2">
+            <h1 id="greeting"></h1>
+            <p>Let's make your Sandwich</p>
+            <!-- Display sandwich here -->
+            <div id="sandwichDisplay"></div>
+            <div class="step2-main">
+                <div>
+                    <p>Choose ingredients:</p>
+                    <div style="border: none; display: block; padding-left: 50px; padding-top: 15px;">
+                        <input type="checkbox" id="ing1">
+                        <label for="ing1"> Patty</label><br>
+                        <input type="checkbox" id="ing2">
+                        <label for="ing2"> Cheese</label><br>
+                        <input type="checkbox" id="ing3">
+                        <label for="ing3"> Lettuce</label><br> 
+                        <input type="checkbox" id="ing4">
+                        <label for="ing4"> Tomato</label><br> 
+                    </div>
+                    
+                </div>
+                <div>
+                    <p>Preview</p>
+
+                    <div class="burger">
+                        <div class="bun-top">
+                            <div class="sesame-seeds">
+                                
+                            </div>
+                        </div>
+                        <div style="display: none;" class="patty"></div>
+                        <div style="display: none;" class="cheese"></div>
+                        <div style="display: none;" class="lettuce"></div>
+                        <div style="display: none;" class="tomato"></div>
+                        
+                        <div class="bun-bottom"></div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="total-price">
+                <span>Total price :</span>
+                <p class="price" style="display: inline; padding-left: 10px;">10 MAD</p>
+            </div>
+            
+            <!-- Add your ingredient checkboxes here -->
+            <button class="button2 button" onclick="prevStep()">Previous</button>
+            <button class="next-button button" onclick="nextStep()">Next</button>
+        </div>
+
+        <!-- Step 3: Choose Your Drink -->
+        <div class="step" id="step3">
+            <h1>Choose your drink</h1>
+
+            <div class="step3-main">
+                <div>
+                    <p style="color: #fff7e1; padding-top: 5px;" class="orange-start">Orange Juice</p>
+                    <div class="orange-middle middle">
+                        <div class="cup-coffee">
+                            <div class="handle"></div>
+                            <div class="coffee"></div>
+                        </div>
+                    </div>
+                    <div class="orange-end end">
+                        <div class="counter">
+                            <button class="plus-miness-buttons miness1">-</button>
+                            <button class="plus-miness-buttons plus1">+</button>
+                            <div class="counter-circle"><p class="count1">0</p></div>
+                            
+                        </div>
+                        <p>20 MAD</p>
+                    </div>
+                </div>
+                <div style="padding-top: 4px;box-sizing: border-box;">
+                    <p style="color: #ffecdf;" class="coffee-start">Coffee</p>
+                    <div style="padding-top: 20px;" class="coffee-middle middle">
+                        <div class="cup-coffee">
+                            <div class="handle"></div>
+                            <div class="coffee coffee2"></div>
+                        </div>
+                    </div>
+                    <div style="padding-top:30px ;" class="coffee-end end">
+                        <div class="counter">
+                            <button class="plus-miness-buttons miness2">-</button>
+                            <button class="plus-miness-buttons plus2">+</button>
+                            <div class="counter-circle"><p class="count2">0</p></div>
+                        </div>
+                        <p>15 MAD</p>
+                    </div><object data="" type=""></object>
+                </div>
+
+            </div>
+
+
+            <div class="total-price">
+                <span>Total price :</span>
+                <p class="price3" style="display: inline; padding-left: 10px;">10 MAD</p>
+            </div>
+            <!-- Add drink options here -->
+            <button class="button2 button" onclick="prevStep()">Previous</button>
+            <button class="button" onclick="nextStep()">Next</button>
+        </div>
+
+        <!-- Step 4: Final Order -->
+        <div class="step" id="step4">
+            <h1>Here's your final order</h1>
+
+            <div class="step4-main">
+                <div>
+                    <div style="margin-bottom: 20px;" class="burger">
+                        <div class="bun-top">
+                            <div class="sesame-seeds">
+                                
+                            </div>
+                        </div>
+                        <div style="display: none;" class="patty"></div>
+                        <div style="display: none;" class="cheese"></div>
+                        <div style="display: none;" class="lettuce"></div>
+                        <div style="display: none;" class="tomato"></div>
+                        
+                        <div class="bun-bottom"></div>
+                    </div>
+    
+                    <div class="cup-coffee2 display1">
+                        <div class="handle2"></div>
+                        <div class="coffee3"></div>
+                    </div>
+    
+                    <div class="cup-coffee2 display2">
+                        <div class="handle2"></div>
+                        <div class="coffee3 coffee4"></div>
+                    </div>
+                </div>
+
+                <div class="final-border">
+                    <p><span style="color: #f85c41;">1</span> burger + <span style="color: #f85c41;" class="c1">0</span> Orange + <span style="color: #f85c41;" class="c2"> 0 </span> Coffee = <span style="color: #f85c41;" class="t">10</span> MAD</p>
+                </div>
+            </div>
+            
+            
+            <div class="total-price">
+                <span>Total price :</span>
+                <p class="price4" style="display: inline; padding-left: 10px;">10 MAD</p>
+            </div>
+            <!-- Display final order and price here -->
+            <button class="button" onclick="prevStep()">Previous</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
