@@ -1,0 +1,41 @@
+#step1 {
+    display: block;
+    margin: 30px 50px;
+}
+
+#step1 h1{
+        font-size: 50px;
+        font-weight: 900;
+        margin-bottom: 0px;
+}
+
+#step1 p {
+    font-size: 18px; 
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+#step1 label {
+    display: block;
+    font-weight: 700;
+    color: #ffb600;
+    font-size: 25px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+#step1 input {
+    border: 2px solid #ffb600;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-family: 'Poppins', Times, serif;
+    transition: 0.3s;
+    outline: none;
+}
+#step1 input:focus {
+    border: 2px solid #453100;
+}
+
+#step1 input::placeholder {
+    color:#aea58f;
+}

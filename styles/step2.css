@@ -1,0 +1,182 @@
+#step2 {
+    margin: 0px 20px;
+    
+}
+
+#greeting{
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 0px;
+}
+#step2 p{
+    /* background-color: #292933; */
+    font-size: 18px;
+    margin: 0px;
+    margin-top: 3px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.step2-main {
+    display: flex;
+    gap: 25px;
+
+}
+
+.step2-main div:nth-child(1){
+    width: 280px;
+    height: 280px;
+    border: 3px solid #ffb600;
+    /* background-color: #ffb600; */
+    border-radius: 40px;
+    /* box-shadow: 0 0 10px rgba(255, 182, 0, 0.15); */
+    /* padding: 15px; */
+    box-sizing:initial;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.step2-main div:nth-child(2){
+    width: 250px;
+    height: 280px;
+    border: 3px solid #ffb600;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+}
+
+.step2-main p{
+    color: #ffb600;
+    font-size: 20px !important; 
+    font-weight: 800 !important;
+    margin-top: 12px !important;
+}
+
+.burger {
+    width: 200px !important ;
+    height: 120px !important ;
+    display: flex !important ;
+    flex-direction: column !important ;
+    justify-content: end !important;
+    align-items: center !important ;
+    position: relative !important ;
+    border: none !important;
+    margin-top: 20px !important ;
+    /* top:200px !important ; */
+    transition: 0.2s;
+}
+
+.burger:hover {
+    width: 220px !important;
+    height: 132px !important;
+}
+
+.bun-top,
+.bun-bottom {
+    width: 80% !important ;
+    height: 40px !important ;
+    background-color: #f9d37c !important ;
+    border-radius: 20px !important ;
+    
+    position: relative !important ;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important ;
+    overflow: hidden !important ;
+    border: none !important;
+}
+
+.bun-top::before,
+.bun-top::after,
+.bun-bottom::before,
+.bun-bottom::after {
+    content: '' !important ;
+    position: absolute !important ;
+    width: 35px !important ;
+    height: 10px !important ;
+    background-color: #f8c667 !important ;
+    border-radius: 5px !important ;
+    top: 19px !important ;
+}
+
+.bun-top::before,
+.bun-top::after {
+    left: 10% !important ;
+}
+
+.bun-top::after {
+    left: 55% !important ;
+}
+
+.bun-bottom::before,
+.bun-bottom::after {
+    left: 5% !important ;
+}
+
+.bun-bottom::after {
+    left: 50% !important ;
+}
+
+.sesame-seeds {
+    position: absolute !important ;
+    width: 100% !important ;
+    height: 100% !important ;
+    display: flex !important ;
+    flex-wrap: wrap !important ;
+    gap: 5px !important ;
+    pointer-events: none !important ;
+}
+
+.sesame-seed {
+    width: 10px !important ;
+    height: 10px !important ;
+    background-color: #f8c667 !important ;
+    border-radius: 50% !important ;
+}
+
+.patty {
+    width: 80% !important ;
+    height: 40px !important ;
+    background-color: #954c00 !important ;
+    border-radius: 10px !important ;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important ;
+    border: none !important;
+}
+
+.cheese {
+    width: 80% !important ;
+    height: 10px !important ;
+    background-color: #ffd700 !important ;
+    border-radius: 5px !important ;
+    border: none !important;
+    
+}
+
+.lettuce {
+    width: 80% !important ;
+    height: 10px !important ;
+    background-color: #4caf50 !important ;
+    border-radius: 5px !important ;
+    border: none !important;
+}
+
+.tomato {
+    width: 80% !important ;
+    height: 10px !important ;
+    background-color: #ff6347 !important ;
+    border-radius: 5px !important ;
+    border: none !important;
+}
+
+.total-price {
+    position: absolute;
+    bottom: 65px;
+    left: 85px;
+    font-family: 'Poppins', arial;
+    font-weight: 700 !important;
+    font-size: 20px !important;
+
+}
