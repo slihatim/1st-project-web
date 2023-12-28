@@ -1,0 +1,205 @@
+#step3 {
+    margin: 0px 20px;
+}
+
+#step3 h1 {
+    font-size: 40px;
+    font-weight: 900;
+    /* padding-left: ; */
+}
+
+.price3 {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+
+.step3-main {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+
+}
+
+.step3-main > div:nth-child(1){
+    width: 250px;
+    height: 300px;
+    /* border: 3px solid #ffb600; */
+    background-color: rgba(255, 167, 0,0.9);
+    border-radius: 40px;
+    /* box-shadow: 0 0 10px rgba(255, 182, 0, 0.15); */
+    /* padding: 15px; */
+    box-sizing:initial;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: inset 0px 0px 5px rgba(0,0,0,0.2);
+    /* box-shadow: 0px 0px 5px rgba(0,0,0,0.2); */
+    overflow: hidden;
+}
+
+.step3-main > div:nth-child(2){
+    width: 250px;
+    height: 300px;
+    background-color: rgba(127,82,52,0.9);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: inset 0px 0px 5px rgba(0,0,0,0.2);
+    /* box-shadow: 0px 0px 5px rgba(0,0,0,0.2); */
+    overflow: hidden;
+}
+
+.step3-main > div >p{
+    color: #ffffff !important;
+    font-size: 20px !important; 
+    font-weight:800 !important;
+    margin-top: 12px !important;
+    /* box-shadow: 0px 0px 10px rgba(0,0,0,0.2); */
+    text-shadow: 0px 0px 2px rgba(0,0,0,0.2);
+    margin-bottom: 0px;
+}
+
+#step3 h1 {
+    margin-top: 40px;
+}
+
+.middle {
+    height: 150px;
+    align-self: stretch;
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.end{
+    height: 60px;
+    align-self: stretch;
+    /* background-color: antiquewhite; */
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    margin-bottom: 10px;
+}
+
+.end > p{
+    color: #ffffff !important;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 16px ; 
+    font-weight:900 ;
+    margin-left: -10px;
+    margin-top: -8px;
+    text-wrap: nowrap;
+    text-shadow: 0px 0px 10px rgba(81, 58, 0, 0.2);
+}
+
+.plus-miness-buttons {
+    background-color: #583823;
+    color: white;
+    border: none;
+    padding: 2px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 30px;
+    position: static;
+}
+
+.plus-miness-buttons:hover {
+    background-color: #a9704a;
+}
+
+.counter{
+    /* margin-right: 10px; */
+    background-color: #583823;
+    width: 100px;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 3px;
+    border-radius: 15px;
+    position: relative;
+    margin-bottom: 8px;
+    margin-right: 0px;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); */
+
+}
+
+.counter-circle {
+    position: absolute;
+    top: 2px;
+    bottom: 2px;
+    left: 32px;
+    width: 40px;
+    height: 40px;
+    /* padding-top: 5px; */
+    /* padding-left: 15px; */
+    /* padding-right: 15px; */
+    border-radius: 20px;
+    background-color: #fff5ef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.counter-circle p {
+    color: #583823 !important;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 20px ; 
+    font-weight:800 ;
+
+}
+
+.cup-coffee {
+    position: relative;
+    width: 130px;
+    height: 140px;
+    background-color: #fffaed; /* Brown color for coffee cup */
+    border-radius: 10px 10px 60px 60px;
+    margin-top: 50px;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); */
+    box-shadow: inset 0px 0px 10px rgba(81, 58, 0, 0.2);
+    margin-top: 0px;
+
+}
+
+.handle {
+    /* position: absolute;
+    width: 30px;
+    height: 60px;
+    background-color: #8B4513;  Match the cup color 
+    border-radius: 50% 50% 0 0;
+    top: 60px;
+    left: 50%;
+    margin-left: -15px;  */
+}
+
+.coffee {
+    position: absolute;
+    width: 100px;
+    height: 80px;
+    top: 20px;
+    background-color: #ffb600; /* Dark brown color for coffee */
+    border-radius: 10px 10px 40px 40px;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.coffee2 {
+    background-color: #926242;
+}
