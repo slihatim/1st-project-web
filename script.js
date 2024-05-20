@@ -7,26 +7,13 @@ function nextStep() {
     if (currentStep === 1) {
         if (nameInput.value.trim() !== '') {
             greeting.textContent = `Hi ${nameInput.value},`;
-            sandwichDisplay.innerHTML = ''; // Clear previous selections
+            sandwichDisplay.innerHTML = ''; // katms7 l previous selections
         } else {
             alert('Please enter your name.');
             return;
         }
     }
 
-    if (currentStep === 2) {
-        // Add logic to handle sandwich ingredients
-    }
-
-    if (currentStep === 3) {
-        // Add logic to handle drink selection
-        
-    }
-
-    if (currentStep === 4) {
-        // Add logic to display final order and price
-
-    }
 
     document.getElementById(`step${currentStep}`).style.display = 'none';
     currentStep++;
@@ -43,7 +30,7 @@ function prevStep() {
 
 
 
-//Logic that applies on the 2nd step
+//la logique dyal 2nd step
 //initializing checkboxes
 document.getElementById('ing1').checked = false;
 document.getElementById('ing2').checked = false;
@@ -64,11 +51,8 @@ let storedPrice;
 
 
 function showHide(checkbox, targetElement) {
-    // Add an event listener to the checkbox
     checkbox.addEventListener('change', function() {
-        // Toggle the display property based on checkbox state
         targetElement.style.display = this.checked ? 'block' : 'none';
-        // console.log("checkebox",this.id,":",this.checked);
         if (this.checked) {
             price += 10;
         } else {
@@ -86,16 +70,13 @@ function showHide(checkbox, targetElement) {
 }
 
 function showHideFinalOrder(checkbox, targetElement) {
-    // Add an event listener to the checkbox
     checkbox.addEventListener('change', function() {
-        // Toggle the display property based on checkbox state
         targetElement.style.display = this.checked ? 'block' : 'none';
-        // console.log("checkebox",this.id,":",this.checked);
         
     });
 }
 
-// Loop over the ingredients and apply showHide logic
+// Loop 3la les ingredients kat applique la logique dyal showHide
 
 showHide(document.getElementById('ing1'), document.querySelectorAll('.patty')[0]);
 showHideFinalOrder(document.getElementById('ing1'), document.querySelectorAll('.patty')[1]);
@@ -113,7 +94,7 @@ showHideFinalOrder(document.getElementById('ing4'), document.querySelectorAll('.
 
 
 
-//Logic that applies on the 3rd step
+//Loop d 3eme step
 console.log(storedPrice);
 
 let count1 = 0;
